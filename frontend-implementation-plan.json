@@ -1,0 +1,77 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Update color scheme and currency to Ghana Cedis",
+  "requirements": [
+    {
+      "id": "REQ-6",
+      "summary": "Replace the current color scheme with user-provided color codes throughout the application theme",
+      "acceptanceCriteria": [
+        "All OKLCH color variables in the CSS files are updated to match the provided color codes",
+        "The new colors are consistently applied across all pages (Dashboard, Products, Sales)",
+        "Light and dark mode variants use the new color palette",
+        "UI components (buttons, cards, tables, forms) reflect the updated color scheme"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/index.css",
+          "operation": "modify",
+          "description": "Update all OKLCH color variables in :root and .dark selectors to use the user-provided color codes for primary, secondary, accent, background, foreground, card, muted, and border colors"
+        },
+        {
+          "path": "frontend/src/index.css",
+          "operation": "modify",
+          "description": "Update all OKLCH color variables in :root and .dark selectors to match the new color scheme, ensuring consistency with frontend/index.css for primary, secondary, accent, background, foreground, card, muted, and border colors"
+        }
+      ]
+    },
+    {
+      "id": "REQ-7",
+      "summary": "Change all currency displays to Ghana Cedis (GH₵) format",
+      "acceptanceCriteria": [
+        "All monetary values display the GH₵ symbol prefix",
+        "Backend stores prices and amounts as numeric values without currency symbols",
+        "Frontend formats all displayed prices and amounts with 'GH₵' prefix and two decimal places",
+        "Currency formatting is consistent across ProductForm, ProductTable, SaleForm, TransactionHistory, RecentTransactions, and MetricCard components",
+        "Dashboard metric cards show inventory value and sales totals in Ghana Cedis format"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/ProductForm.tsx",
+          "operation": "modify",
+          "description": "Update price input labels and placeholders to indicate Ghana Cedis (GH₵) for wholesalePricePees and retailPricePees fields"
+        },
+        {
+          "path": "frontend/src/components/ProductTable.tsx",
+          "operation": "modify",
+          "description": "Update price display formatting in the Wholesale and Retail columns to show GH₵ prefix followed by the price value divided by 100 with two decimal places"
+        },
+        {
+          "path": "frontend/src/components/SaleForm.tsx",
+          "operation": "modify",
+          "description": "Update total amount display to format the calculated total with GH₵ prefix and two decimal places, and update any price-related labels or placeholders to indicate Ghana Cedis"
+        },
+        {
+          "path": "frontend/src/components/RecentTransactions.tsx",
+          "operation": "modify",
+          "description": "Update transaction amount display to format totalAmountPees with GH₵ prefix followed by the amount divided by 100 with two decimal places"
+        },
+        {
+          "path": "frontend/src/components/TransactionHistory.tsx",
+          "operation": "modify",
+          "description": "Update all monetary value displays including transaction totals and individual item prices to show GH₵ prefix followed by the value divided by 100 with two decimal places"
+        },
+        {
+          "path": "frontend/src/components/MetricCard.tsx",
+          "operation": "modify",
+          "description": "Update value prop formatting in components that pass monetary values to MetricCard to ensure they display with GH₵ prefix and two decimal places when rendering dashboard metrics for inventory value and sales totals"
+        },
+        {
+          "path": "frontend/src/pages/DashboardPage.tsx",
+          "operation": "modify",
+          "description": "Update MetricCard value props for Total Inventory Value, Total Wholesale Sales, and Total Retail Sales to format monetary values with GH₵ prefix and two decimal places before passing to MetricCard components"
+        }
+      ]
+    }
+  ]
+}

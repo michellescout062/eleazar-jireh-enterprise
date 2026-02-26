@@ -1,0 +1,71 @@
+{
+  "kind": "coverage_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-21T14:10:23.850Z",
+  "sources": {
+    "buildRequest": true,
+    "implementationPlan": true
+  },
+  "requirements": {
+    "total": 2,
+    "implemented": 1,
+    "items": [
+      {
+        "id": "REQ-6",
+        "summary": "Replace the current color scheme in frontend/index.css and frontend/src/index.css with the user-provided color codes throughout the application theme including backgrounds, borders, text colors, and accent colors",
+        "status": "missing",
+        "plannedFiles": [
+          "frontend/index.css",
+          "frontend/src/index.css"
+        ],
+        "matchedFiles": []
+      },
+      {
+        "id": "REQ-7",
+        "summary": "Change all currency displays from the current format to Ghana Cedis (GH₵) including product prices (wholesale and retail), sales transaction amounts, dashboard metrics (total inventory value, sales totals), and any other monetary values shown in the application",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/ProductForm.tsx",
+          "frontend/src/components/ProductTable.tsx",
+          "frontend/src/components/SaleForm.tsx",
+          "frontend/src/components/RecentTransactions.tsx",
+          "frontend/src/components/TransactionHistory.tsx",
+          "frontend/src/components/MetricCard.tsx",
+          "frontend/src/pages/DashboardPage.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/ProductForm.tsx",
+          "frontend/src/components/ProductTable.tsx",
+          "frontend/src/components/SaleForm.tsx",
+          "frontend/src/components/RecentTransactions.tsx",
+          "frontend/src/components/TransactionHistory.tsx",
+          "frontend/src/pages/DashboardPage.tsx"
+        ]
+      }
+    ]
+  },
+  "changedFiles": [
+    "backend/main.mo",
+    "backend/migration.mo",
+    "build-request.json",
+    "build-template/README.md",
+    "feature_evidence.json",
+    "frontend-file-summaries.txt",
+    "frontend-implementation-plan.json",
+    "frontend/src/backend.d.ts",
+    "frontend/src/backend.ts",
+    "frontend/src/components/ProductForm.tsx",
+    "frontend/src/components/ProductTable.tsx",
+    "frontend/src/components/RecentTransactions.tsx",
+    "frontend/src/components/SaleForm.tsx",
+    "frontend/src/components/TransactionHistory.tsx",
+    "frontend/src/declarations/backend.did.d.ts",
+    "frontend/src/declarations/backend.did.js",
+    "frontend/src/hooks/useDashboardMetrics.ts",
+    "frontend/src/pages/DashboardPage.tsx",
+    "project_state.json",
+    "scratch/component-selection.json",
+    "spec.md",
+    "spec_vs_diff_report.json"
+  ]
+}

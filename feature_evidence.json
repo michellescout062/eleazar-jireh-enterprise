@@ -1,0 +1,28 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-change-all-currency-displays-from-the-current-format-to-ghana-cedis-gh-including-product-prices-wholesale-and-retail-sales-transaction-amounts-dashboard-metrics-total-inventory-value-sales-totals-and-any-other-monetary-values-shown-in-the-application",
+      "featureTitle": "Change all currency displays from the current format to Ghana Cedis (GH₵) including product prices (wholesale and retail), sales transaction amounts, dashboard metrics (total inventory value, sales totals), and any other monetary values shown in the application",
+      "files": [
+        "frontend/src/components/ProductForm.tsx",
+        "frontend/src/components/ProductTable.tsx",
+        "frontend/src/components/RecentTransactions.tsx",
+        "frontend/src/components/SaleForm.tsx",
+        "frontend/src/components/TransactionHistory.tsx",
+        "frontend/src/pages/DashboardPage.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-7"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

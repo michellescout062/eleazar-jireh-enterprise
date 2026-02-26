@@ -1,0 +1,20 @@
+{
+  "frontend/src/App.tsx": "Main application component that sets up TanStack Router with routes for Dashboard, Products, and Sales pages, wrapped in a Layout component with Toaster for notifications.",
+  "frontend/src/components/Layout.tsx": "Layout wrapper component that provides consistent structure with Header, main content area with Outlet for route rendering, and footer with branding and attribution.",
+  "frontend/src/components/Header.tsx": "Application header displaying \"Eleazar Jireh Enterprise\" branding with logo, subtitle, and navigation menu with active state indicators for Dashboard, Products, and Sales pages.",
+  "frontend/src/pages/DashboardPage.tsx": "Dashboard page displaying key business metrics in cards (inventory value, product count, wholesale/retail sales) with recent transactions and low stock alerts, all monetary values formatted in Ghana Cedis (GH₵).",
+  "frontend/src/pages/ProductsPage.tsx": "Products management page with table view of all products, add/edit product dialog, and delete confirmation, handling all product CRUD operations.",
+  "frontend/src/pages/SalesPage.tsx": "Sales page with two-column layout featuring a new sale form on the left and transaction history with filtering on the right.",
+  "frontend/src/components/MetricCard.tsx": "Reusable card component for displaying business metrics with title, value, description, icon, and variant-based color coding (default, success, warning, error).",
+  "frontend/src/components/RecentTransactions.tsx": "Component displaying recent sales transactions in a scrollable list with customer type badges, dates, item counts, and total amounts formatted in Ghana Cedis (GH₵).",
+  "frontend/src/components/LowStockAlerts.tsx": "Component showing products below stock threshold (10 units) with warning styling, product details, and current quantity in a scrollable list.",
+  "frontend/src/components/ProductTable.tsx": "Table component displaying all products with columns for SKU, name, category, wholesale/retail prices in GH₵, stock quantity with low-stock badges, and action buttons for edit/delete.",
+  "frontend/src/components/ProductForm.tsx": "Form component for adding/editing products with fields for SKU, name, category, wholesale/retail prices in Ghana Cedis (GH₵), quantity, and description, properly converting between Cedis and pesewas (smallest unit).",
+  "frontend/src/components/DeleteProductDialog.tsx": "Alert dialog component for confirming product deletion with product name and SKU display, using shadcn AlertDialog component.",
+  "frontend/src/components/SaleForm.tsx": "Form for recording new sales with customer type selection, dynamic product line items with quantity inputs, automatic price calculation in Ghana Cedis, and total display.",
+  "frontend/src/components/TransactionHistory.tsx": "Component displaying all sales transactions in chronological order with filtering by customer type and detailed line item breakdowns, all monetary values shown in Ghana Cedis (GH₵).",
+  "frontend/src/hooks/useQueries.ts": "Custom React Query hooks for all backend operations including product CRUD (getAllProducts, addProduct, editProduct, deleteProduct) and sales operations (getSales, recordSale) with automatic cache invalidation.",
+  "frontend/src/hooks/useDashboardMetrics.ts": "Custom hook that calculates dashboard metrics from products and sales data including total inventory value, low stock items, wholesale/retail sales totals in Ghana Cedis, and recent transactions, properly converting from pesewas to Cedis.",
+  "frontend/src/index.css": "Global styles with OKLCH-based warm professional color system featuring earth tones (browns, tans, warm grays) and amber accents for both light and dark modes.",
+  "frontend/tailwind.config.js": "Tailwind configuration with custom warm professional color palette, Inter font family, custom border radius, and enhanced shadows for business application aesthetic."
+}

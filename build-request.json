@@ -1,0 +1,63 @@
+{
+  "kind": "build_request",
+  "title": "Update color scheme and currency to Ghana Cedis",
+  "projectName": "Eleazar Jireh Enterprise",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-6",
+      "text": "Replace the current color scheme in frontend/index.css and frontend/src/index.css with the user-provided color codes throughout the application theme including backgrounds, borders, text colors, and accent colors",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-last"
+        ],
+        "quotes": [
+          "use these colour code"
+        ]
+      },
+      "acceptanceCriteria": [
+        "All OKLCH color variables in the CSS files are updated to match the provided color codes",
+        "The new colors are consistently applied across all pages (Dashboard, Products, Sales)",
+        "Light and dark mode variants use the new color palette",
+        "UI components (buttons, cards, tables, forms) reflect the updated color scheme"
+      ]
+    },
+    {
+      "id": "REQ-7",
+      "text": "Change all currency displays from the current format to Ghana Cedis (GH₵) including product prices (wholesale and retail), sales transaction amounts, dashboard metrics (total inventory value, sales totals), and any other monetary values shown in the application",
+      "target": "both",
+      "source": {
+        "messageIds": [
+          "msg-last"
+        ],
+        "quotes": [
+          "let the currency be in ghana cedis"
+        ]
+      },
+      "acceptanceCriteria": [
+        "All monetary values display the GH₵ symbol prefix",
+        "Backend stores prices and amounts as numeric values without currency symbols",
+        "Frontend formats all displayed prices and amounts with 'GH₵' prefix and two decimal places",
+        "Currency formatting is consistent across ProductForm, ProductTable, SaleForm, TransactionHistory, RecentTransactions, and MetricCard components",
+        "Dashboard metric cards show inventory value and sales totals in Ghana Cedis format"
+      ]
+    }
+  ],
+  "constraints": [
+    "Do not modify authentication logic in frontend/src/hooks/useInternetIdentity.ts",
+    "Do not change the backend data schema for products and sales",
+    "Preserve the single-actor architecture in backend/main.mo",
+    "Do not edit files in frontend/src/components/ui directory"
+  ],
+  "nonGoals": [
+    "Adding multi-currency support or currency conversion features",
+    "Implementing currency selection dropdown",
+    "Changing the application's core functionality beyond visual updates",
+    "Modifying the data structure to store currency type"
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  }
+}

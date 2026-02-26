@@ -1,0 +1,86 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 5,
+  "summary": "Wholesale and retail shop management application",
+  "architectural_notes": [
+    "Currency formatting should use Ghana Cedis (GH₵) throughout the application"
+  ],
+  "known_issues": [],
+  "isFixRequest": false,
+  "existing_features": [
+    {
+      "id": "feature-create-a-product-inventory-management-system-that-allows-adding-editing-viewing-and-deleting-products-with-fields-for-product-name-sku-category-wholesale-price-retail-price-quantity-in-stock-and-description",
+      "title": "Create a product inventory management system that allows adding, editing, viewing, and deleting products with fields for product name, SKU, category, wholesale price, retail price, quantity in stock, and description",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-a-sales-transaction-system-that-records-sales-with-customer-type-wholesale-or-retail-products-sold-quantities-applicable-pricing-wholesale-or-retail-transaction-date-and-total-amount",
+      "title": "Implement a sales transaction system that records sales with customer type (wholesale or retail), products sold, quantities, applicable pricing (wholesale or retail), transaction date, and total amount",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-dashboard-that-displays-key-business-metrics-including-total-inventory-value-recent-transactions-low-stock-alerts-products-below-a-threshold-and-sales-summaries",
+      "title": "Create a dashboard that displays key business metrics including total inventory value, recent transactions, low stock alerts (products below a threshold), and sales summaries",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-display-eleazar-jireh-enterprise-as-the-shop-name-prominently-in-the-application-header-and-branding-throughout-the-interface",
+      "title": "Display 'Eleazar Jireh Enterprise' as the shop name prominently in the application header and branding throughout the interface",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-design-a-cohesive-visual-theme-with-warm-professional-colors-such-as-earth-tones-or-warm-neutrals-with-accent-colors-clear-typography-optimized-for-business-data-readability-and-a-clean-layout-that-prioritizes-efficiency-and-quick-access-to-inventory-and-sales-functions",
+      "title": "Design a cohesive visual theme with warm, professional colors (such as earth tones or warm neutrals with accent colors), clear typography optimized for business data readability, and a clean layout that prioritizes efficiency and quick access to inventory and sales functions",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-change-all-currency-displays-from-the-current-format-to-ghana-cedis-gh-including-product-prices-wholesale-and-retail-sales-transaction-amounts-dashboard-metrics-total-inventory-value-sales-totals-and-any-other-monetary-values-shown-in-the-application",
+      "title": "Change all currency displays from the current format to Ghana Cedis (GH₵) including product prices (wholesale and retail), sales transaction amounts, dashboard metrics (total inventory value, sales totals), and any other monetary values shown in the application",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Create wholesale and retail shop management system",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Change currency display to Ghana Cedis (GH₵)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Replace the current color scheme in frontend/index.css and frontend/src/index.css with the user-provided color codes throughout the application theme including backgrounds, borders, text colors, and accent colors",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "Eleazar Jireh Enterprise",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}
